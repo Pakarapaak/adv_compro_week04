@@ -21,7 +21,7 @@ print("Capitalized:", so.capitalize_string(sample_string))
 print("Lowercase:", so.lowercase_string(sample_string))
 print("Uppercase:", so.uppercase_string(sample_string)) """
 
-#Ex5
+""" #Ex5
 # Importing modules from the utilities package
 from utilities.calculator import add as add_def, subtract as subtract_def, multiply as multiply_def, divide as divide_def
 from utilities.string_operations import reverse_string, capitalize_string, lowercase_string, uppercase_string
@@ -40,4 +40,9 @@ print("Original:", sample_string)
 print("Reversed:", reverse_string(sample_string))
 print("Capitalized:", capitalize_string(sample_string))
 print("Lowercase:", lowercase_string(sample_string))
-print("Uppercase:", uppercase_string(sample_string))
+print("Uppercase:", uppercase_string(sample_string)) """
+
+#Ex6
+grades = [55, 70, 65, 40, 90, 85, 50, 77]
+passed_with_bonus = list(map(lambda x: x*1.05, filter(lambda X: X>=60, grades)))
+print(passed_with_bonus)
