@@ -1,5 +1,8 @@
 def add(x,y):
     return x+y
-subtrack = lambda x,y: x-y
-multiply = lambda x,y: x*y
-divide = lambda x,y: x/y
+def subtrack(x,y):
+    return x-y
+def multiply(x,y):
+    return x*y
+def divide(x,y):
+    return x/y
