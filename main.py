@@ -35,14 +35,23 @@ print("Division:", divide_def(10, 5))
 
 # Sample strings and printing results using string_operations.py
 sample_string = "hello World"
-print("\nUsing string_operations.py:")
+print("Using string_operations.py:")
 print("Original:", sample_string)
 print("Reversed:", reverse_string(sample_string))
 print("Capitalized:", capitalize_string(sample_string))
 print("Lowercase:", lowercase_string(sample_string))
 print("Uppercase:", uppercase_string(sample_string)) """
 
-#Ex6
+""" #Ex6
 grades = [55, 70, 65, 40, 90, 85, 50, 77]
 passed_with_bonus = list(map(lambda x: x*1.05, filter(lambda X: X>=60, grades)))
-print(passed_with_bonus)
+print(passed_with_bonus) """
+
+#Ex7
+children = [{"name": "Alice", "age": 2, "height": 95}, 
+            {"name": "Bob", "age": 4, "height": 105}, 
+            {"name":"Charlie", "age": 3, "height": 110}, 
+            {"name": "David", "age": 5, "height": 102}, 
+            {"name": "Eve", "age": 6, "height": 99}]
+eligible_children = list(filter(lambda p: p["age"] > 3 and p["height"]>100, children))
+print(eligible_children)
